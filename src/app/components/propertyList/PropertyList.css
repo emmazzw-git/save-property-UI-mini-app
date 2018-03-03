@@ -1,0 +1,14 @@
+.propertyListContainer {
+    display: flex;
+    flex-direction: row;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse;/* Safari 6.1+ */
+    align-items: center;
+    width: 400px;
+    padding: 50px 0;
+    margin: auto;
+}
+.col {
+    flex: 1;
+    text-align: center;
+}
