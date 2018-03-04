@@ -25,12 +25,16 @@ ShallowWrapper {
         <div
           className="col"
 >
-          
+          <div>
+                    Results
+          </div>
 </div>,
         <div
           className="col"
 >
-          
+          <div>
+                    Saved Properties
+          </div>
 </div>,
       ],
       "className": "propertyListContainer",
@@ -42,11 +46,28 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [],
+          "children": Array [
+            <div>
+              Results
+</div>,
+            Array [],
+          ],
           "className": "col",
         },
         "ref": null,
-        "rendered": Array [],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Results",
+            },
+            "ref": null,
+            "rendered": "Results",
+            "type": "div",
+          },
+        ],
         "type": "div",
       },
       Object {
@@ -54,11 +75,28 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [],
+          "children": Array [
+            <div>
+              Saved Properties
+</div>,
+            Array [],
+          ],
           "className": "col",
         },
         "ref": null,
-        "rendered": Array [],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Saved Properties",
+            },
+            "ref": null,
+            "rendered": "Saved Properties",
+            "type": "div",
+          },
+        ],
         "type": "div",
       },
     ],
@@ -74,12 +112,16 @@ ShallowWrapper {
           <div
             className="col"
 >
-            
+            <div>
+                        Results
+            </div>
 </div>,
           <div
             className="col"
 >
-            
+            <div>
+                        Saved Properties
+            </div>
 </div>,
         ],
         "className": "propertyListContainer",
@@ -91,11 +133,28 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [],
+            "children": Array [
+              <div>
+                Results
+</div>,
+              Array [],
+            ],
             "className": "col",
           },
           "ref": null,
-          "rendered": Array [],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Results",
+              },
+              "ref": null,
+              "rendered": "Results",
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
         Object {
@@ -103,11 +162,28 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [],
+            "children": Array [
+              <div>
+                Saved Properties
+</div>,
+              Array [],
+            ],
             "className": "col",
           },
           "ref": null,
-          "rendered": Array [],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Saved Properties",
+              },
+              "ref": null,
+              "rendered": "Saved Properties",
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
       ],

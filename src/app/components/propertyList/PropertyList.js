@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import PropertyCard from './propertyCard/PropertyCard'
 import './PropertyList.css'
 
 export class PropertyList extends Component {
@@ -13,10 +14,12 @@ export class PropertyList extends Component {
     return (
       <div className='propertyListContainer'>
         <div className='col'>
-          {results.map(result => <div>{result.id}</div>)}
+          <div>Results</div>
+          {results.map(result => <PropertyCard propertyDetails={result} key={result.id} />)}
         </div>
         <div className='col'>
-          {saved.map(s => <div>{s.id}</div>)}
+          <div>Saved Properties</div>
+          {saved.map(s => <PropertyCard propertyDetails={s} key={s.id} />)}
         </div>
       </div>
     )

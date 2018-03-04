@@ -3,12 +3,11 @@
     flex-direction: row;
     display: -webkit-flex; /* Safari */
     -webkit-flex-direction: row-reverse;/* Safari 6.1+ */
-    align-items: center;
     width: 400px;
-    padding: 50px 0;
-    margin: auto;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 .col {
-    flex: 1;
     text-align: center;
+    padding: 0 20px;
 }

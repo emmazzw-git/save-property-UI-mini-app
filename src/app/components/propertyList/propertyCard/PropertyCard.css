@@ -1,0 +1,25 @@
+.propertyCardContainer {
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse;/* Safari 6.1+ */
+    width: 160px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    margin: 10px 0 20px;
+}
+
+.propertyCardHeader {
+   text-align: left;
+   padding: 5px 0;
+}
+
+.logo {
+   width: 50px;
+}
+
+.propertyImage {
+    width: 158px;
+    height: 100px;
+}
