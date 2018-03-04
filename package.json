@@ -10,10 +10,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/app/**/*.js",
     "eject": "react-scripts eject",
     "lint": "standard --fix",
-    "precommit": "lint-staged && CI=true npm test --findRelatedTests"
+    "precommit": "lint-staged && CI=true npm test --findRelatedTests "
   },
   "devDependencies": {
     "enzyme": "^3.3.0",

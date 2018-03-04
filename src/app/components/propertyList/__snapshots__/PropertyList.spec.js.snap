@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PropertyList snapshot test 1`] = `
+exports[`PropertyList snapshot test with no property details 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -182,6 +182,330 @@ ShallowWrapper {
               "ref": null,
               "rendered": "Saved Properties",
               "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`PropertyList snapshot test with property details returned 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PropertyList
+    fetchPropertyList={[Function]}
+    results={
+        Array [
+            Object {
+              "id": "1",
+            },
+          ]
+    }
+    saved={
+        Array [
+            Object {
+              "id": "2",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="col"
+>
+          <div>
+                    Results
+          </div>
+          <PropertyCard
+                    propertyDetails={
+                              Object {
+                                        "id": "1",
+                                      }
+                    }
+          />
+</div>,
+        <div
+          className="col"
+>
+          <div>
+                    Saved Properties
+          </div>
+          <PropertyCard
+                    propertyDetails={
+                              Object {
+                                        "id": "2",
+                                      }
+                    }
+          />
+</div>,
+      ],
+      "className": "propertyListContainer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              Results
+</div>,
+            Array [
+              <PropertyCard
+                propertyDetails={
+                                Object {
+                                                "id": "1",
+                                              }
+                }
+/>,
+            ],
+          ],
+          "className": "col",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Results",
+            },
+            "ref": null,
+            "rendered": "Results",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "propertyDetails": Object {
+                "id": "1",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              Saved Properties
+</div>,
+            Array [
+              <PropertyCard
+                propertyDetails={
+                                Object {
+                                                "id": "2",
+                                              }
+                }
+/>,
+            ],
+          ],
+          "className": "col",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Saved Properties",
+            },
+            "ref": null,
+            "rendered": "Saved Properties",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "class",
+            "props": Object {
+              "propertyDetails": Object {
+                "id": "2",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col"
+>
+            <div>
+                        Results
+            </div>
+            <PropertyCard
+                        propertyDetails={
+                                    Object {
+                                                "id": "1",
+                                              }
+                        }
+            />
+</div>,
+          <div
+            className="col"
+>
+            <div>
+                        Saved Properties
+            </div>
+            <PropertyCard
+                        propertyDetails={
+                                    Object {
+                                                "id": "2",
+                                              }
+                        }
+            />
+</div>,
+        ],
+        "className": "propertyListContainer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                Results
+</div>,
+              Array [
+                <PropertyCard
+                  propertyDetails={
+                                    Object {
+                                                      "id": "1",
+                                                    }
+                  }
+/>,
+              ],
+            ],
+            "className": "col",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Results",
+              },
+              "ref": null,
+              "rendered": "Results",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "propertyDetails": Object {
+                  "id": "1",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                Saved Properties
+</div>,
+              Array [
+                <PropertyCard
+                  propertyDetails={
+                                    Object {
+                                                      "id": "2",
+                                                    }
+                  }
+/>,
+              ],
+            ],
+            "className": "col",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Saved Properties",
+              },
+              "ref": null,
+              "rendered": "Saved Properties",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "propertyDetails": Object {
+                  "id": "2",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",

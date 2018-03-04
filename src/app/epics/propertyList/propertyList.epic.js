@@ -13,12 +13,13 @@ const getPropertyListEpic = action$ =>
         // TODO: implement API call to replace mock response when the endpoint is ready
         Observable.of(
           setPropertyList(mockResponse)
-        )
-          .catch(() => {
+        ),
+        // TODO: catch errors when the endpoint is ready
+        /* .catch(() => {
             return Observable.of(
               // TODO: actions to set errors
             )
-          }),
+          }), */
         Observable.of(
           // TODO: actions to stop spinner
         )

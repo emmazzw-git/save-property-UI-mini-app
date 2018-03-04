@@ -10,7 +10,7 @@ export class PropertyList extends Component {
   }
 
   render () {
-    const { results = [], saved = [] } = this.props
+    const { results, saved } = this.props
     return (
       <div className='propertyListContainer'>
         <div className='col'>
@@ -30,6 +30,11 @@ PropertyList.propTypes = {
   results: PropTypes.array,
   saved: PropTypes.array,
   fetchPropertyList: PropTypes.func
+}
+
+PropertyList.defaultProps = {
+  results: [],
+  saved: []
 }
 
 export default PropertyList
