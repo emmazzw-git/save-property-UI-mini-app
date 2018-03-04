@@ -5,6 +5,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PropertyCard
+    buttonClassName="addProperty"
+    callBackFn={[Function]}
     propertyDetails={
         Object {
             "agency": Object {
@@ -46,22 +48,21 @@ ShallowWrapper {
                     src="http://i1.au.reastatic.net/agencylogo/XRWXMT/12/20120927204448.gif"
           />
 </div>,
-        <div
-          className="propertyCardBody"
->
+        <div>
           <img
                     alt="propertyImage"
                     className="propertyImage"
                     src="http://i2.au.reastatic.net/640x480/20bfc8668a30e8cabf045a1cd54814a9042fc715a8be683ba196898333d68cec/main.jpg"
           />
 </div>,
-        <div
-          className="propertyCardFooter"
->
+        <div>
           $726,500
 </div>,
+        null,
       ],
       "className": "propertyCardContainer",
+      "onMouseEnter": [Function],
+      "onMouseLeave": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -106,7 +107,6 @@ ShallowWrapper {
             className="propertyImage"
             src="http://i2.au.reastatic.net/640x480/20bfc8668a30e8cabf045a1cd54814a9042fc715a8be683ba196898333d68cec/main.jpg"
 />,
-          "className": "propertyCardBody",
         },
         "ref": null,
         "rendered": Object {
@@ -130,12 +130,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "$726,500",
-          "className": "propertyCardFooter",
         },
         "ref": null,
         "rendered": "$726,500",
         "type": "div",
       },
+      null,
     ],
     "type": "div",
   },
@@ -160,22 +160,21 @@ ShallowWrapper {
                         src="http://i1.au.reastatic.net/agencylogo/XRWXMT/12/20120927204448.gif"
             />
 </div>,
-          <div
-            className="propertyCardBody"
->
+          <div>
             <img
                         alt="propertyImage"
                         className="propertyImage"
                         src="http://i2.au.reastatic.net/640x480/20bfc8668a30e8cabf045a1cd54814a9042fc715a8be683ba196898333d68cec/main.jpg"
             />
 </div>,
-          <div
-            className="propertyCardFooter"
->
+          <div>
             $726,500
 </div>,
+          null,
         ],
         "className": "propertyCardContainer",
+        "onMouseEnter": [Function],
+        "onMouseLeave": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -220,7 +219,6 @@ ShallowWrapper {
               className="propertyImage"
               src="http://i2.au.reastatic.net/640x480/20bfc8668a30e8cabf045a1cd54814a9042fc715a8be683ba196898333d68cec/main.jpg"
 />,
-            "className": "propertyCardBody",
           },
           "ref": null,
           "rendered": Object {
@@ -244,12 +242,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "$726,500",
-            "className": "propertyCardFooter",
           },
           "ref": null,
           "rendered": "$726,500",
           "type": "div",
         },
+        null,
       ],
       "type": "div",
     },

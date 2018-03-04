@@ -1,7 +1,9 @@
 import propertyListReducer, {
   types,
   fetchPropertyList,
-  setPropertyList
+  setPropertyList,
+  addProperty,
+  removeProperty
 } from './propertyListReducer'
 
 const initialState = {
@@ -19,6 +21,40 @@ describe('propertyListReducer', () => {
         ...state,
         results: stateAfter.results,
         saved: stateAfter.saved
+      })
+    })
+  })
+
+  describe('action.type === types.ADD_PROPERTY', () => {
+    test('should update state object when new state is supplied', () => {
+      const state = { results: [{id: 1}, {id: 2}], saved: [{id: 1}] }
+      const stateAfter = {id: 2}
+      const action = { type: types.ADD_PROPERTY, property: stateAfter }
+      expect(propertyListReducer(state, action)).toEqual({
+        ...state,
+        saved: state.results
+      })
+    })
+
+    test('should not update state object when new state already exists', () => {
+      const state = { results: [{id: 1}, {id: 2}], saved: [{id: 1}] }
+      const stateAfter = {id: 1}
+      const action = { type: types.ADD_PROPERTY, property: stateAfter }
+      expect(propertyListReducer(state, action)).toEqual({
+        ...state,
+        saved: state.saved
+      })
+    })
+  })
+
+  describe('action.type === types.REMOVE_PROPERTY', () => {
+    test('should update state object when new state is supplied', () => {
+      const state = { results: [{id: 1}, {id: 2}], saved: [{id: 1}] }
+      const stateAfter = {id: 1}
+      const action = { type: types.REMOVE_PROPERTY, property: stateAfter }
+      expect(propertyListReducer(state, action)).toEqual({
+        ...state,
+        saved: []
       })
     })
   })
@@ -64,6 +100,26 @@ describe('propertyListReducer', () => {
         expect(setPropertyList(properties)).toEqual({
           type: 'SET_PROPERTY_LIST',
           properties
+        })
+      })
+    })
+
+    describe('addProperty', () => {
+      const property = {id: 1}
+      test('should return {type: ADD_PROPERTY, property: property}', () => {
+        expect(addProperty(property)).toEqual({
+          type: 'ADD_PROPERTY',
+          property
+        })
+      })
+    })
+
+    describe('removeProperty', () => {
+      const property = {id: 1}
+      test('should return {type: REMOVE_PROPERTY, property: property}', () => {
+        expect(removeProperty(property)).toEqual({
+          type: 'REMOVE_PROPERTY',
+          property
         })
       })
     })

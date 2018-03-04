@@ -27,5 +27,27 @@ describe('PropertyListContainer', () => {
         type: types.FETCH_PROPERTY_LIST
       })
     })
+
+    test('should return an object with the function addProperty as a property', () => {
+      const property = {id: 1}
+      let dispatch = jest.fn()
+      const dispatchToProps = mapDispatchToProps(dispatch)
+      dispatchToProps.addProperty(property)
+      expect(dispatch).toHaveBeenCalledWith({
+        type: types.ADD_PROPERTY,
+        property
+      })
+    })
+
+    test('should return an object with the function removeProperty as a property', () => {
+      const property = {id: 1}
+      let dispatch = jest.fn()
+      const dispatchToProps = mapDispatchToProps(dispatch)
+      dispatchToProps.removeProperty(property)
+      expect(dispatch).toHaveBeenCalledWith({
+        type: types.REMOVE_PROPERTY,
+        property
+      })
+    })
   })
 })

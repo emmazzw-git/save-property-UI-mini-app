@@ -5,7 +5,9 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PropertyList
+    addProperty={[Function]}
     fetchPropertyList={[Function]}
+    removeProperty={[Function]}
     results={Array []}
     saved={Array []}
 />,
@@ -205,7 +207,9 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PropertyList
+    addProperty={[Function]}
     fetchPropertyList={[Function]}
+    removeProperty={[Function]}
     results={
         Array [
             Object {
@@ -241,6 +245,9 @@ ShallowWrapper {
                     Results
           </div>
           <PropertyCard
+                    buttonClassName="addProperty"
+                    buttonText="Add property"
+                    callBackFn={[Function]}
                     propertyDetails={
                               Object {
                                         "id": "1",
@@ -255,6 +262,9 @@ ShallowWrapper {
                     Saved Properties
           </div>
           <PropertyCard
+                    buttonClassName="removeProperty"
+                    buttonText="Remove property"
+                    callBackFn={[Function]}
                     propertyDetails={
                               Object {
                                         "id": "2",
@@ -278,6 +288,9 @@ ShallowWrapper {
 </div>,
             Array [
               <PropertyCard
+                buttonClassName="addProperty"
+                buttonText="Add property"
+                callBackFn={[Function]}
                 propertyDetails={
                                 Object {
                                                 "id": "1",
@@ -306,6 +319,9 @@ ShallowWrapper {
             "key": "1",
             "nodeType": "class",
             "props": Object {
+              "buttonClassName": "addProperty",
+              "buttonText": "Add property",
+              "callBackFn": [Function],
               "propertyDetails": Object {
                 "id": "1",
               },
@@ -328,6 +344,9 @@ ShallowWrapper {
 </div>,
             Array [
               <PropertyCard
+                buttonClassName="removeProperty"
+                buttonText="Remove property"
+                callBackFn={[Function]}
                 propertyDetails={
                                 Object {
                                                 "id": "2",
@@ -356,6 +375,9 @@ ShallowWrapper {
             "key": "2",
             "nodeType": "class",
             "props": Object {
+              "buttonClassName": "removeProperty",
+              "buttonText": "Remove property",
+              "callBackFn": [Function],
               "propertyDetails": Object {
                 "id": "2",
               },
@@ -384,6 +406,9 @@ ShallowWrapper {
                         Results
             </div>
             <PropertyCard
+                        buttonClassName="addProperty"
+                        buttonText="Add property"
+                        callBackFn={[Function]}
                         propertyDetails={
                                     Object {
                                                 "id": "1",
@@ -398,6 +423,9 @@ ShallowWrapper {
                         Saved Properties
             </div>
             <PropertyCard
+                        buttonClassName="removeProperty"
+                        buttonText="Remove property"
+                        callBackFn={[Function]}
                         propertyDetails={
                                     Object {
                                                 "id": "2",
@@ -421,6 +449,9 @@ ShallowWrapper {
 </div>,
               Array [
                 <PropertyCard
+                  buttonClassName="addProperty"
+                  buttonText="Add property"
+                  callBackFn={[Function]}
                   propertyDetails={
                                     Object {
                                                       "id": "1",
@@ -449,6 +480,9 @@ ShallowWrapper {
               "key": "1",
               "nodeType": "class",
               "props": Object {
+                "buttonClassName": "addProperty",
+                "buttonText": "Add property",
+                "callBackFn": [Function],
                 "propertyDetails": Object {
                   "id": "1",
                 },
@@ -471,6 +505,9 @@ ShallowWrapper {
 </div>,
               Array [
                 <PropertyCard
+                  buttonClassName="removeProperty"
+                  buttonText="Remove property"
+                  callBackFn={[Function]}
                   propertyDetails={
                                     Object {
                                                       "id": "2",
@@ -499,6 +536,9 @@ ShallowWrapper {
               "key": "2",
               "nodeType": "class",
               "props": Object {
+                "buttonClassName": "removeProperty",
+                "buttonText": "Remove property",
+                "callBackFn": [Function],
                 "propertyDetails": Object {
                   "id": "2",
                 },

@@ -8,6 +8,7 @@
     border-radius: 5px;
     border: 1px solid darkgrey;
     margin: 10px 0 20px;
+    position: relative;
 }
 
 .propertyCardHeader {
@@ -22,4 +23,23 @@
 .propertyImage {
     width: 158px;
     height: 100px;
+}
+
+.propertySelectionOptionButton {
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    font-size: 0.9em;
+    border-radius: 10px;
+    width: 140px
+}
+
+.addProperty {
+    color: green;
+    border: 2px solid green;
+}
+
+.removeProperty {
+    color: red;
+    border: 2px solid red;
 }
